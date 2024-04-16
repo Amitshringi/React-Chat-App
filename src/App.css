@@ -1,0 +1,167 @@
+/* App.css */
+
+
+/* styling for body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the main container of the app */
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Taking full height of the viewport */
+}
+
+/* Styling for the container holding the chat interface */
+.ChatContainer {
+  display: flex;
+  flex: 1;
+}
+
+/* Styling for the sidebar */
+.Sidebar {
+  flex: 1;
+  background-color: #6ea7e3;
+  padding: 20px;
+  overflow-y: auto;
+  font-style: italic;
+}
+
+/* Styling for the app name */
+.app-name {
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #0056b3;
+}
+
+/* Styling for the main message container */
+.MessageContainer {
+  flex: 3;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling for individual messages */
+.MessageContainer .Message {
+  margin-bottom: 10px;
+}
+
+/* Styling for the last message in the container */
+.MessageContainer .Message:last-child {
+  margin-bottom: 0;
+}
+
+/* Styling for user names in messages */
+.MessageContainer .Message .User {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Styling for message text */
+.MessageContainer .Message .Text {
+  color: #333333;
+}
+
+/* Styling for the emoji picker button */
+.EmojiPickerButton {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.EmojiPickerButton:hover {
+  color: #0056b3;
+}
+
+/* Styling for the chat input container */
+.ChatInput {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-top: 1px solid #e0e0e0;
+  padding: 10px;
+  margin-top: auto;
+}
+
+/* Styling for the input field within the chat input container */
+.ChatInput input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 8px;
+}
+
+/* Styling for the send button within the chat input container */
+.ChatInput button {
+  border: none;
+  color: #ffffff;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 10px;
+  height: 50px;
+}
+
+/* Styling for the send button on hover */
+.ChatInput button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the send button image */
+.send-btn-img {
+  height: 100%;
+}
+
+
+
+/* Styling for individual messages */
+.message {
+  margin-bottom: 20px;
+}
+
+/* Styling for user avatar */
+.message .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Styling for message text */
+.message .text {
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+/* Styling for received messages */
+.message .text.received {
+  background-color: #ffffff;
+  align-self: flex-start;
+}
+
+/* Styling for message timestamps */
+.time {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* Styling for message span */
+.message-span {
+  margin: 15px;
+  border-radius: 60px;
+}
+
+/* Styling for cards */
+.card {
+  border: none;
+}
